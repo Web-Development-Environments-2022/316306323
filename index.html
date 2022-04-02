@@ -1,193 +1,110 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="style.css" />
-</head>
-<body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img src="src/header.jpg" alt="Welcome To My Web Page" />
+    </header>
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <img src="src/logo.jpg" alt="Ori Websites" />
+      </div>
+      <div class="navbar-container">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#photos">My Photos</a></li>
+          <li><a href="#playlist">My Playlist</a></li>
+          <li><a href="#like">Like</a></li>
+          <li><a href="#qrcoder">QR code</a></li>
+          <li><a href="#spa">Q&A</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="web-body">
+      <section id="about" class="section">
+        <div class="section-start"><h1>ABOUT ME</h1></div>
+        <h3>History</h3>
+        <p>
+          Ori grew up at Kfar Vradim.<br />
+          He was a professional basketball player that decided to build websites
+          for elderly.
+        </p>
+        <h3>Hobbies</h3>
+        <p>
+          Ori likes all kinds of sports. <br />
+          Also, he like to travel around the world.
+        </p>
+      </section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="photos" class="section">
+        <div class="section-start">
+          <h1>PHOTOS</h1>
+        </div>
+        <img src="src/friends1.jpg" />
+        <img src="src/friends2.jpg" />
+        <img src="src/friends3.jpg" />
+        <img src="src/friends4.jpg" />
+        <img src="src/friends5.jpg" />
+        <img src="src/friends6.jpg" />
+        <img src="src/friends7.jpg" />
+      </section>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="playlist" class="section">
+        <div class="section-start">
+          <h1>MY PLAYLIST</h1>
+        </div>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/9bZkp7q19f0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="like" class="section">
+        <div class="section-start">
+          <h1>GIVE ME A LIKE</h1>
+        </div>
+      </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="qrcoder" class="section">
+        <div class="section-start">
+          <h1>SCAN MY CODE</h1>
+        </div>
+      </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="spa" class="section">
+        <div class="section-start">
+          <h1>ANS</h1>
+        </div>
+      </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+      <section id="contact" class="section">
+        <div class="section-start">
+          <h1>CONTACT ME</h1>
+        </div>
+      </section>
 
-
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
-</body>
+      <!-- <script type="text/javascript">
+        $(function () {
+          $("#nav a").click(function (e) {
+            e.preventDefault();
+            $("html,body").scrollTo(this.hash, this.hash);
+          });
+        });
+      </script>
+      <script type="text/javascript">
+        $(document).scroll(function() {
+          $('#menu').toggle($(this).scrollTop()>1000)
+        });​
+      </script> -->
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
