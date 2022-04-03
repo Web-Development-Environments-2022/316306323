@@ -24,3 +24,15 @@ window.addEventListener("resize", function (e) {
     logo.classList.remove("hide-logo");
   }
 });
+
+function processForm(e) {
+  if (e.preventDefault) e.preventDefault();
+
+  /* do what you want with the form */
+  console.log(`Thanks. submitted at: ${e.timeStamp}`);
+  // You must return false to prevent the default form behavior
+  return false;
+}
+
+const form = document.getElementById("form");
+form.addEventListener("submit", processForm);
