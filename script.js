@@ -11,7 +11,7 @@ window.addEventListener("scroll", function (e) {
   }
 });
 
-function handleForm(e) {
-  e.preventDefault();
-  console.log("button clicked!");
-}
+// function handleForm(e) {
+//   e.preventDefault();
+//   console.log("button clicked!");
+// }

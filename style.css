@@ -146,7 +146,7 @@ form label {
 form input,
 form textarea {
   /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
+	   By default, textareas have a monospace font */
   font: 1em sans-serif;
 
   /* Uniform text field size */
@@ -172,7 +172,4 @@ form textarea {
   padding: 0.5em;
 }
 
-#emoji {
-  display: inline;
-}
 /* //////////////////////////////////////////////////// */
