@@ -1,11 +1,8 @@
 "use strict";
 // sticky navigation
 const nav = document.getElementById("navbar");
-console.log(nav);
 const aboutSection = document.getElementById("about");
-console.log(aboutSection);
 const initalCoords = aboutSection.getBoundingClientRect();
-console.log(initalCoords);
 window.addEventListener("scroll", function (e) {
   if (this.window.scrollY > initalCoords.top) {
     nav.classList.add("sticky");
@@ -13,3 +10,8 @@ window.addEventListener("scroll", function (e) {
     nav.classList.remove("sticky");
   }
 });
+
+function handleForm(e) {
+  e.preventDefault();
+  console.log("button clicked!");
+}
