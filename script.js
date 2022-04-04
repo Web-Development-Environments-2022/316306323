@@ -18,7 +18,7 @@
 
 const logo = document.getElementById("logo");
 window.addEventListener("resize", function (e) {
-  if (window.innerWidth < 1350) {
+  if (window.innerWidth < 1250) {
     logo.classList.add("hide-logo");
   } else {
     logo.classList.remove("hide-logo");
