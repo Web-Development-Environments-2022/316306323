@@ -19,32 +19,35 @@ header {
   line-height: 100px;
 }
 .logo {
-  width: 30%;
-  float: left;
+  width: auto;
+  float: right;
   line-height: 100px;
+  height: 100px;
+  margin-right: 50px;
 }
-.logo a {
+/* .logo a {
   text-decoration: none;
   font-size: 30px;
-  /* font-family: bignoodletitling; */
   color: #fff;
   letter-spacing: 5px;
 }
 .logo img {
   height: 100px;
-}
+} */
 .hide-logo {
   display: none;
 }
 nav {
   float: right;
   line-height: 100px;
+  position: fixed;
+  margin-left: 50px;
 }
 nav a {
   text-decoration: none;
   /* font-family: bignoodletitling; */
   letter-spacing: 4px;
-  font-size: 20px;
+  font-size: 15px;
   margin: 0 10px;
   color: #fff;
 }
@@ -71,7 +74,7 @@ nav a {
   position: relative;
   top: 450px;
   background: #ddd;
-  height: 1500px;
+  /* height: 1500px; */
 }
 
 .content-area h2 {

@@ -8,9 +8,7 @@
     <div class="box-area">
       <header>
         <div class="wrapper">
-          <div class="logo">
-            <img src="src/logo.jpg" />
-          </div>
+          <img class="logo" src="src/logo.jpg" />
           <nav>
             <a href="#about">ABOUT ME</a>
             <a href="#photos">MY PHOTOS</a>
@@ -192,5 +190,18 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <!-- <script type="text/javascript">
+      $(function () {
+        $("#nav a").click(function (e) {
+          e.preventDefault();
+          $("html,body").scrollTo(this.hash, this.hash);
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).scroll(function() {
+         $('#menu').toggle($(this).scrollTop()>1000)
+      });​
+    </script> -->
   </body>
 </html>
