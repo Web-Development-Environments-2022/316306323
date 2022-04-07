@@ -157,12 +157,17 @@
               <h1>CONTACT ME</h1>
             </div>
 
-            <form id="form" method="post">
+            <form
+              id="form"
+              action="mailto:orisal@post.bgu.ac.il"
+              enctype="text/plain"
+              method="get"
+            >
               <!-- onsubmit="handle_form()" -->
               <ul>
                 <li>
                   <label for="name">Your Full Name:</label>
-                  <input type="text" id="name" name="user_name" />
+                  <input type="text" id="name" name="subject" />
                 </li>
                 <li>
                   <label for="mail">Your E-mail:</label>
@@ -170,7 +175,7 @@
                 </li>
                 <li>
                   <label for="msg">Please Enter Your Message:</label>
-                  <textarea id="msg" name="user_message"></textarea>
+                  <textarea id="msg" name="body"></textarea>
                 </li>
                 <li>
                   <select ref="user_message" id="emo">
