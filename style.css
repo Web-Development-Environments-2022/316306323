@@ -37,6 +37,12 @@ header {
 .hide-logo {
   display: none;
 }
+
+@media screen and (max-width: 1200px) {
+  #logo {
+    display: none;
+  }
+}
 nav {
   float: right;
   line-height: 100px;

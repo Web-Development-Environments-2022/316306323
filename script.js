@@ -16,23 +16,23 @@
 //   console.log("button clicked!");
 // }
 
-const logo = document.getElementById("logo");
-window.addEventListener("resize", function (e) {
-  if (window.innerWidth < 1250) {
-    logo.classList.add("hide-logo");
-  } else {
-    logo.classList.remove("hide-logo");
-  }
-});
+// const logo = document.getElementById("logo");
+// window.addEventListener("resize", function (e) {
+//   if (window.innerWidth < 1250) {
+//     logo.classList.add("hide-logo");
+//   } else {
+//     logo.classList.remove("hide-logo");
+//   }
+// });
 
-function processForm(e) {
-  if (e.preventDefault) e.preventDefault();
+// function processForm(e) {
+//   if (e.preventDefault) e.preventDefault();
 
-  /* do what you want with the form */
-  console.log(`Thanks. submitted at: ${e.timeStamp}`);
-  // You must return false to prevent the default form behavior
-  return false;
-}
+//   /* do what you want with the form */
+//   console.log(`Thanks. submitted at: ${e.timeStamp}`);
+//   // You must return false to prevent the default form behavior
+//   return false;
+// }
 
-const form = document.getElementById("form");
-form.addEventListener("submit", processForm);
+// const form = document.getElementById("form");
+// form.addEventListener("submit", processForm);
