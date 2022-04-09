@@ -157,17 +157,11 @@
               <h1>CONTACT ME</h1>
             </div>
 
-            <form
-              id="form"
-              enctype="text/plain"
-              action="mailto:orisal@post.bgu.ac.il"
-              method="get"
-              onsubmit="setAction(this)"
-            >
+            <form>
               <ul>
                 <li>
                   <label for="user_name">Your Full Name:</label>
-                  <input type="text" id="user_name" name="subject" />
+                  <input type="text" id="user_name" name="user_name" />
                 </li>
                 <li>
                   <label for="user_email">Your E-mail:</label>
@@ -175,7 +169,7 @@
                 </li>
                 <li>
                   <label for="user_msg">Please Enter Your Message:</label>
-                  <textarea id="user_msg" name="body"></textarea>
+                  <textarea id="user_msg" name="user_msg"></textarea>
                 </li>
                 <li>
                   <label for="emoji">Add Emoji To Message:</label>
@@ -188,7 +182,12 @@
                   </select>
                 </li>
                 <li>
-                  <button type="submit">Submit</button>
+                  <input
+                    type="button"
+                    value="Submit"
+                    id="form_button"
+                    onclick="setAction()"
+                  />
                 </li>
               </ul>
             </form>
@@ -200,20 +199,20 @@
     <script src="script.js"></script>
 
     <script type="text/javascript">
-      function setAction(form) {
+      function setAction() {
         let user_name = document.getElementById("user_name");
         let user_email = document.getElementById("user_email");
         let user_msg = document.getElementById("user_msg");
         let user_emoji = document.getElementById("user_emoji");
 
-        user_name.value = `Client: ${user_name.value}`;
+        let subject = `Client: ${user_name.value}`;
+        let body = `${user_msg.value} ${user_emoji.value}\n\n Email for contact: ${user_email.value}`;
 
-        user_msg.value += ` ${user_emoji.value} \n\n Email for contact: ${user_email.value}`;
-
-        user_name.value = user_name.value.replace(" ", "_");
-        user_msg.value = user_msg.value.replace(" ", "_");
-
-        return true;
+        // user_name.value = user_name.value.replace(" ", "_");
+        // user_msg.value = user_msg.value.replace(" ", "_");
+        console.log(subject);
+        console.log(`body: ${body}`);
+        window.location.href = `mailto:orisal@post.bgu.ac.il?subject=${subject}&body=${body}`;
       }
     </script>
   </body>

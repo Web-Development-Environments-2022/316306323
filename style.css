@@ -24,17 +24,21 @@ header {
   line-height: 100px;
   height: 100px;
 }
-/* .logo a {
-  text-decoration: none;
-  font-size: 30px;
-  color: #fff;
-  letter-spacing: 5px;
-}
-.logo img {
-  height: 100px;
-} */
+
 .hide-logo {
   display: none;
+}
+
+#form_button {
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border: 2px solid palevioletred;
+}
+
+#form_button:hover {
+  border: 2px solid rgb(245, 6, 86);
 }
 
 @media screen and (max-width: 1200px) {
