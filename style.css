@@ -25,6 +25,10 @@ header {
   height: 100px;
 }
 
+.about-text {
+  padding-top: 50px;
+}
+
 .hide-logo {
   display: none;
 }
@@ -82,7 +86,7 @@ nav a {
   width: 100%;
   position: relative;
   top: 450px;
-  background: #ddd;
+  background: #d3d3d3;
   /* height: 1500px; */
 }
 
