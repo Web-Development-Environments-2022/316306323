@@ -159,26 +159,28 @@
 
             <form
               id="form"
-              action="mailto:orisal@post.bgu.ac.il"
               enctype="text/plain"
+              action="mailto:orisal@post.bgu.ac.il"
               method="get"
+              onsubmit="setAction(this)"
             >
-              <!-- onsubmit="handle_form()" -->
               <ul>
                 <li>
-                  <label for="name">Your Full Name:</label>
-                  <input type="text" id="name" name="subject" />
+                  <label for="user_name">Your Full Name:</label>
+                  <input type="text" id="user_name" name="subject" />
                 </li>
                 <li>
-                  <label for="mail">Your E-mail:</label>
-                  <input type="email" id="mail" name="user_email" />
+                  <label for="user_email">Your E-mail:</label>
+                  <input type="email" id="user_email" name="user_email" />
                 </li>
                 <li>
-                  <label for="msg">Please Enter Your Message:</label>
-                  <textarea id="msg" name="body"></textarea>
+                  <label for="user_msg">Please Enter Your Message:</label>
+                  <textarea id="user_msg" name="body"></textarea>
                 </li>
                 <li>
-                  <select ref="user_message" id="emo">
+                  <label for="emoji">Add Emoji To Message:</label>
+                  <select id="user_emoji">
+                    <option value="">No emoji!</option>
                     <option value="&#128512;">&#128512;</option>
                     <option value="&#128514;">&#128514;</option>
                     <option value="&#128519;">&#128519;</option>
@@ -194,7 +196,30 @@
         </div>
       </div>
     </div>
+
     <script src="script.js"></script>
+
+    <!-- </script> -->
+    <script type="text/javascript">
+      function setAction(form) {
+        // const form = document.getElementById("form");
+        let user_name = document.getElementById("user_name");
+        let user_email = document.getElementById("user_email");
+        let user_msg = document.getElementById("user_msg");
+        let user_emoji = document.getElementById("user_emoji");
+
+        user_name.value = `Message from: ${user_name.value}`;
+
+        user_msg.value += ` ${user_emoji.value} \n\n Email for contact: ${user_email.value}`;
+
+        // user_name.value = user_name.value.replace(/ /g, "%20");
+        // user_msg.value = user_msg.value.replace(/ /g, "%20");
+
+        // console.log("HELLO!");
+        return true;
+      }
+    </script>
+
     <!-- <script type="text/javascript">
       $(function () {
         $("#nav a").click(function (e) {
@@ -207,6 +232,7 @@
       $(document).scroll(function() {
          $('#menu').toggle($(this).scrollTop()>1000)
       });​
-    </script> -->
-  </body>
+    </script>
+  mailto:orisal@post.bgu.ac.il
+  --></body>
 </html>
