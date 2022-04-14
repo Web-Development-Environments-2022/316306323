@@ -176,12 +176,12 @@
                 </li>
                 <li>
                   <label for="emoji">Add Emoji To Message:</label>
-                  <select id="user_emoji">
-                    <option value="">No emoji!</option>
-                    <option value="&#128512;">&#128512;</option>
-                    <option value="&#128514;">&#128514;</option>
-                    <option value="&#128519;">&#128519;</option>
-                    <option value="&#128526;">&#128526;</option>
+                  <select onchange="addEmoji()" id="user_emoji">
+                    <option id="0" value="">No emoji!</option>
+                    <option id="1" value="&#128512;">&#128512;</option>
+                    <option id="2" value="&#128514;">&#128514;</option>
+                    <option id="3" value="&#128519;">&#128519;</option>
+                    <option id="4" value="&#128526;">&#128526;</option>
                   </select>
                 </li>
                 <li>
@@ -202,6 +202,18 @@
     <script src="script.js"></script>
 
     <script type="text/javascript">
+    function addEmoji(){
+      let user_emoji = document.getElementById("user_emoji");
+      let user_msg = document.getElementById("user_msg");
+
+      user_msg.value += user_emoji.value;
+
+      document.getElementById("0").selected = true;
+
+    }
+    </script>
+
+    <script type="text/javascript">
       function setAction() {
         let user_name = document.getElementById("user_name");
         let user_email = document.getElementById("user_email");
@@ -211,10 +223,6 @@
         let subject = `Client: ${user_name.value}`;
         let body = `${user_msg.value} ${user_emoji.value}\n\n Email for contact: ${user_email.value}`;
 
-        // user_name.value = user_name.value.replace(" ", "_");
-        // user_msg.value = user_msg.value.replace(" ", "_");
-        console.log(subject);
-        console.log(`body: ${body}`);
         window.location.href = `mailto:orisal@post.bgu.ac.il?subject=${subject}&body=${body}`;
       }
     </script>
